@@ -73,9 +73,9 @@ return;
             }}>Add Task</button>
             <ul>
                 {tasks.map((task) => (
-                    <li style={{cursor: "pointer"}} key={task.id} onClick={() => {
+                    <li  key={task.id} > <span style={{cursor: "pointer"}} onClick={() => {
                        changeTaskStatus(task.id)
-                    }}> <span >{task.value}</span>
+                    }} >{task.value}</span>
                         <button onClick={() => {
                           removeTask(task.id)
                         }}>Remove</button>
